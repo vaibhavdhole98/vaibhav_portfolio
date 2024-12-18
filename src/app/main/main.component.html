@@ -1,0 +1,350 @@
+<header (document:click)="clickOutsideHeader($event)">
+    <nav class="stroke" [ngClass]="{ 'show': showNavbar }">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="burger-menu" [ngClass]="{ 'show': showBurgerMenu }" (click)="toggleBurgerMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+    <ul class="menu-list" *ngIf="showBurgerMenu">
+        <li><a href="#" (click)="toggleBurgerMenu()">Home</a></li>
+        <li><a href="#about" (click)="toggleBurgerMenu()">About</a></li>
+        <li><a href="#skills" (click)="toggleBurgerMenu()">Skills</a></li>
+        <li><a href="#profile" (click)="toggleBurgerMenu()">Profile</a></li>
+        <li><a href="#contact" (click)="toggleBurgerMenu()">Contact</a></li>
+    </ul>
+</header>
+
+<div id="section-one">
+    <div id="section-one-main">
+        <div id="intro">
+            <p class="color-black-russian text-intro"><span class="color-dark-pink">Hello,</span> I am Vaibhav Dhole.
+            </p>
+            <h1 class="color-prussian-blue">Angular Developer</h1>
+            <p class="color-black-russian text-intro">I write code and make websites.</p>
+           
+            <!-- <div class="get-cv">
+                <a  (click)="downloadPdf()"><button class="button-outline">Get
+                        CV</button></a>
+            </div> sc-->
+            <div class="get-cv">
+                <a href="#" (click)="downloadPdf()">
+                    <button class="button-outline" [disabled]="isDisabled"
+                        (mouseenter)="showTooltip = true"
+                        (mouseleave)="showTooltip = false">
+                        Get CV
+                    </button>
+                </a>
+                <div *ngIf="showTooltip && (isDisabled || !isDisabled)" class="tooltip">
+                    {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below! 📧' : 'Click to download CV' }}
+                </div>
+            </div>
+            
+            
+            
+            
+        </div>
+        <img class="angular-logo" id="me-one" alt="angular Icon" src="assets/angular-icon.png">
+    </div>
+</div>
+
+
+
+<!-- ===============  Section 2 =============== -->
+
+<div id="about">
+    <div class="card">
+        <div class="section-heading">
+            <p class="color-dark-pink section-heading-paragraph">WHO AM I</p>
+            <h3 class="section-heading-text">ABOUT ME</h3>
+        </div>
+        <br>
+        <p class="color-rock-blue about-paragraph" >I'm Vaibhav, a 26-year-old Angular Developer with over 3 years of experience based in Nagpur, India. My journey into programming began shortly after graduation when I started self-learning web development through online resources such as YouTube tutorials and blog posts.
+        </p>
+      <!--   <p class="color-rock-blue about-paragraph" style="text-align: center">
+             -->
+
+             <p class="color-rock-blue about-paragraph">
+            In early 2022, I joined GIF Technologies
+            as an Assistant Executive Developer, where I gained hands-on experience with Angular and AngularJS
+            frameworks.
+        </p>
+
+        <p class="color-rock-blue about-paragraph">
+            At Com1 Communication Technologies Pvt. Ltd, I led the migration of our application from Angular version 10
+            to version 14. This project significantly enhanced the application's performance, security, and alignment
+            with modern web standards.
+
+            <br><br>As a freelancer, I also worked on various web development projects, gaining valuable experience in
+            building dynamic web applications.
+
+            <br><br>I have worked on multiple projects, developing dynamic web applications and consistently aiming to
+            learn more, do more, and excel. I am dedicated, curious, passionate, committed, and a quick learner!
+
+        </p>
+    </div>
+</div>
+
+
+
+
+<!-- ===============  Section 3 =============== -->
+<div id="skills">
+    <div class="section-heading">
+        <p class="color-dark-pink section-heading-paragraph">SKILLS</p>
+        <h3 class="section-heading-text">TECH STACK</h3>
+    </div>
+
+    <div class="icon-grid">
+        <div class="section-heading-skills">
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/angular.png" alt="Angular Icon">
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/typescript.png" alt="TypeScript Icon">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/javascript.png" alt="JavaScript Icon">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/angularjs.png" alt="AngularJS Icon">
+                        <p>AngularJS</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/debugging.png" alt="Debugging Icon">
+                        <p>Debugging</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/uiux.png" alt="UI/UX Icon">
+                        <p>UI/UX</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/rest-api-icon.png" alt="RESTful APIs Icon">
+                        <p>RESTful APIs</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/jquery.png" alt="jQuery Icon">
+                        <p>jQuery</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/unit-testing.png" alt="unit testing Icon">
+                        <p>Unit Testing</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/html.png" alt="HTML Icon">
+                        <p>HTML</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/css-3.png" alt="CSS Icon">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/bootstrap.png" alt="Bootstrap Icon">
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/agile.png" alt="aglie Icon">
+                        <p>Agile Methodology</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/postman.png" alt="Postman Icon">
+                        <p>Postman</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/github.png" alt="GitHub Icon">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="assets/icons/photoshop.png" alt="Photoshop Icon">
+                        <p>Photoshop</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ===============  Section 4 =============== -->
+
+<div id="profile">
+    <div class="section-heading">
+        <p class="color-dark-pink section-heading-paragraph">PROFILE
+        </p>
+    </div>
+    <div class="container">
+        <main class="row">
+            <section class="col">
+                <header class="title">
+                    <h3 class="section-heading-text ">EXPERIENCE</h3>
+                </header>
+                <div class="contents">
+                    <div class="box">
+                        <h4>20/06/2023 - Present</h4>
+                        <h3>Com1 Communication Technologies Pvt. Ltd.</h3>
+                        <p class="desgination">Angular Developer</p>
+                        <!-- <p class="profile-p">Crafted responsive web applications with Angular, implementing reusable
+                            components to ensure scalability across different Angular versions, including 10, 13, and
+                            15. Proficiently debugged, provided effective solutions, and conducted
+                            thorough unit testing for robust performance.
+                        </p> -->
+                    </div>
+
+                    <div class="box">
+                        <h4>01/04/2022 - 19/06/2023</h4>
+                        <h3>GIF Technologies Pvt. Ltd.</h3>
+                        <p class="desgination">Assistant Executive Developer</p>
+                        <!-- <p class="profile-p">Built responsive web apps with Angular, using reusable components for
+                            scalability. Debugged production issues, provided effective solutions, and conducted unit
+                            testing. Proficient in jQuery and AngularJS for efficient development.
+                        </p> -->
+                    </div>
+                    <div class="box">
+                        <h4>01/06/2020 - 30/01/2021</h4>
+                        <h3>Freelancer</h3>
+                        <p class="desgination">Web Developer</p>
+                        <!-- <p class="profile-p">Built responsive web apps with Angular, using reusable components for
+                            scalability. Debugged production issues, provided effective solutions, and conducted unit
+                            testing. Proficient in jQuery and AngularJS for efficient development.
+                        </p> -->
+                    </div>
+                </div>
+            </section>
+
+            <!--   *******  Experience Section Starts  *******  -->
+            <section class="col">
+                <header class="title">
+                    <h3 class="section-heading-text">EDUCATION</h3>
+                </header>
+                <div class="contents">
+                    <div class="box">
+                        <h4>2016 - 2019</h4>
+                        <h3>Bachelor of Engineering</h3>
+                        <p class="profile-p">Degree in Electronics and Telecommunication
+                            <br>from S. B. Jain Institute of Technology, Nagpur.
+                        </p>
+
+
+                    </div>
+
+                    <div class="box">
+                        <h4>2013 - 2016</h4>
+                        <h3>Diploma</h3>
+                        <p class="profile-p">Diploma in Electronics and Telecommunication
+                            <br>from KDK Nagpur Polytechnic, Nagpur.
+                        </p>
+                    </div>
+
+                    <div class="box">
+                        <h4>2012 - 2013</h4>
+                        <h3>SSC</h3>
+                        <p class="profile-p">Secondary School Certificate
+                            <br>from Sanjuba High School, Nagpur.
+                        </p>
+                    </div>
+
+                </div>
+            </section>
+
+
+        </main>
+    </div>
+</div>
+
+
+
+
+<!-- ==============  Section 6 ================ -->
+<div id="contact">
+    <div class="section-heading">
+        <p class="color-dark-pink section-heading-paragraph">CONTACT
+        </p>
+    </div>
+    <div class="card">
+        <p>Have Any Project In Mind? <span class="color-dark-pink">Say Hello At</span></p>
+        <a id="email" href="mailto:vaibhav123dhole@gmail.com" target="_blank">vaibhav123dhole&#64;gmail.com</a>
+    </div>
+</div>
+
+
+<!-- ==============  Footer ================ -->
+<div id="social-links">
+    <div class="flex-container">
+        <a href="https://github.com/vaibhavdhole98" target="_blank"><img src="assets/social/github.svg"></a>
+        <a href="https://www.instagram.com/vaibhav__dhole/" target="_blank"><img src="assets/social/insta.svg"></a>
+        <a href="https://twitter.com/VaibhavDhole8" target="_blank"><img src="assets/social/twitter-logo-x.svg"></a>
+        
+
+        <a href="https://www.linkedin.com/in/vaibhavdhole98/" target="_blank"><img src="assets/social/linkedin.svg"></a>
+    </div>
+</div>
+
+<!-- ==============  Footer ================ -->
+<footer>
+    <p>Made by Vaibhav Dhole</p>
+</footer>
