@@ -1,0 +1,17 @@
+<svg width="114.4" height="393" viewBox="0 0 114.4 393" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none">
+    <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="114.4" height="393">
+        <rect width="114.4" height="393" fill="#FFFFFF" />
+    </mask>
+    <g mask="url(#mask0)">
+        <g clip-path="url(#clip0)">
+            <polygon fill="#DD0031" points="57.2,0 57.2,0 57.2,0 0,20.4 8.72,96.03 57.2,122.88 57.2,122.88 57.2,122.88 105.68,96.03 114.4,20.4 57.2,0" />
+            <polygon fill="#C3002F" points="57.2,0 57.2,13.64 57.2,13.58 57.2,75.82 57.2,75.82 57.2,122.88 57.2,122.88 105.68,96.03 114.4,20.4 57.2,0" />
+            <path fill="#FFFFFF" d="M57.2,13.58L21.44,93.76l0,0h13.33l0,0l7.19-17.94h30.35l7.19,17.94l0,0h13.33l0,0L57.2,13.58L57.2,13.58 L57.2,13.58L57.2,13.58L57.2,13.58L57.2,13.58z M67.65,64.76H46.76L57.2,39.63L67.65,64.76L67.65,64.76z" />
+        </g>
+    </g>
+    <defs>
+        <clipPath id="clip0">
+            <rect x="0" y="0" width="114.4" height="393" fill="#FFFFFF" />
+        </clipPath>
+    </defs>
+</svg>
