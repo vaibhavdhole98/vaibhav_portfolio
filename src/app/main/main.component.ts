@@ -9,6 +9,7 @@ export class MainComponent {
   showNavbar: boolean = false;
   showBurgerMenu: boolean = false;
   showNavbar2: boolean = false;
+  filePath :string="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/";
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
   }
