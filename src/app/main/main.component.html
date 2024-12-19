@@ -22,7 +22,7 @@
     </ul>
 </header>
 
-<div id="section-one">
+<!-- <div id="section-one">
     <div id="section-one-main">
         <div id="intro">
             <p class="color-black-russian text-intro"><span class="color-dark-pink">Hello,</span> I am Vaibhav Dhole.
@@ -30,50 +30,43 @@
             <h1 class="color-prussian-blue">Angular Developer</h1>
             <p class="color-black-russian text-intro">I write code and make websites.</p>
 
-            <!-- <div class="get-cv">
+            <div class="get-cv">
                 <a  (click)="downloadPdf()"><button class="button-outline">Get
                         CV</button></a>
-            </div>  -->
-
-
-            <!-- <div class="get-cv">
-                <button class="button-outline" [disabled]="isDisabled" (click)="downloadPdf()"
-                    (mouseenter)="showTooltip = true" (mouseleave)="showTooltip = false">
-                    Get CV
-                </button>
-                <div *ngIf="showTooltip" class="tooltip">
-                    {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below!
-                    📧' : 'Click to download CV' }}
-                </div>
-            </div> -->
-
-
-            <div class="get-cv">
-                <button 
-                  class="button-outline" 
-                  [disabled]="isDisabled"
-                  (click)="downloadPdf()"
-                  (mouseenter)="handleMouseEnter()"
-                  (mouseleave)="handleMouseLeave()"
-                  #cvButton>
-                  Get CV
-                </button>
-                <div 
-                  class="tooltip" 
-                  [ngClass]="{'show-tooltip': showTooltip}">
-                  {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below! 📧' : 'Click to download CV' }}
-                </div>
-              </div>
-
-
-
-
+            </div> 
         </div>
         <img class="angular-logo" id="me-one" alt="angular Icon"
             src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/angular-icon.png">
     </div>
-</div>
+</div> -->
 
+<div id="section-one">
+    <div id="section-one-main">
+      <div id="intro">
+        <p class="color-black-russian text-intro">
+          <span class="color-dark-pink">Hello,</span> I am Vaibhav Dhole.
+        </p>
+        <h1 class="color-prussian-blue">Angular Developer</h1>
+        <p class="color-black-russian text-intro">I write code and make websites.</p>
+  
+        <div class="get-cv">
+          <button class="button-outline" (click)="downloadPdf()">Get CV</button>
+          <div *ngIf="tooltipMessage" class="tooltip">{{ tooltipMessage }}</div>
+        </div>
+      </div>
+      <img
+        class="angular-logo"
+        id="me-one"
+        alt="angular Icon"
+        src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/angular-icon.png"
+      />
+    </div>
+  </div>
+  
+
+
+
+<!-- 'If you really, really want to hire me, just send me an email at the address below! 📧' -->
 
 
 <!-- ===============  Section 2 =============== -->

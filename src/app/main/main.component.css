@@ -911,83 +911,31 @@ footer p {
 
 
 
-
-/* disable */
-
-/* .get-cv {
-    position: relative;
-    display: inline-block;
-}
-
-.button-outline {
-    cursor: pointer;
-}
-
 .tooltip {
-    visibility: hidden;
-    width: 220px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%; 
-    right: -60px;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.get-cv:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-}
-
-.button-outline:disabled {
-    cursor: not-allowed;
-}
-
-.get-cv:disabled .tooltip {
-    visibility: visible;
-    opacity: 1;
-} */
-
-
-.get-cv {
-    position: relative;
+    margin-top: 10px;
+    color: #010101; 
+    font-size: 14px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    /* border-radius: 5px; */
+    border-radius: 9999px; /* Fully rounded corners */
     display: inline-block;
+    animation: fade-in-out 8s forwards;
   }
   
-  .button-outline {
-    cursor: pointer;
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
   }
   
-  .button-outline:disabled {
-    cursor: not-allowed;
-  }
-  
-  .tooltip {
-    display: block;
-    visibility: hidden;
-    width: 220px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    right: -60px;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s, visibility 0.3s;
-    pointer-events: none;
-  }
-  
-  .tooltip.show-tooltip {
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
