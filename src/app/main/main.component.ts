@@ -43,7 +43,7 @@ import { Component, HostListener } from '@angular/core';
 export class MainComponent {
   showNavbar: boolean = false;
   showBurgerMenu: boolean = false;
-  tooltipMessage: string = ''; // Tooltip message to be shown
+  tooltipMessage: string = '';
 
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
@@ -63,10 +63,12 @@ export class MainComponent {
 
   // Modified method
   downloadPdf(): void {
+    //     let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf'; 
+    //     window.open(pdfUrl, '_blank');
     this.tooltipMessage =
       'If you really, really want to hire me, just send me an email at the address below! 📧';
     setTimeout(() => {
-      this.tooltipMessage = ''; // Clear the message after 5 seconds
+      this.tooltipMessage = '';
     }, 5000);
   }
 }
