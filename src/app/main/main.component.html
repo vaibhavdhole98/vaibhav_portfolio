@@ -36,7 +36,7 @@
             </div>  -->
 
 
-            <div class="get-cv">
+            <!-- <div class="get-cv">
                 <button class="button-outline" [disabled]="isDisabled" (click)="downloadPdf()"
                     (mouseenter)="showTooltip = true" (mouseleave)="showTooltip = false">
                     Get CV
@@ -45,9 +45,25 @@
                     {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below!
                     📧' : 'Click to download CV' }}
                 </div>
-            </div>
+            </div> -->
 
 
+            <div class="get-cv">
+                <button 
+                  class="button-outline" 
+                  [disabled]="isDisabled"
+                  (click)="downloadPdf()"
+                  (mouseenter)="onButtonMouseEnter()"
+                  (mouseleave)="onButtonMouseLeave()"
+                  #cvButton>
+                  Get CV
+                </button>
+                <div 
+                  class="tooltip" 
+                  [class.show-tooltip]="showTooltip">
+                  {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below! 📧' : 'Click to download CV' }}
+                </div>
+              </div>
 
 
 

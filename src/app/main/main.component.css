@@ -913,7 +913,8 @@ footer p {
 
 
 /* disable */
-.get-cv {
+
+/* .get-cv {
     position: relative;
     display: inline-block;
 }
@@ -924,7 +925,7 @@ footer p {
 
 .tooltip {
     visibility: hidden;
-    width: 220px; /* Adjust based on message length */
+    width: 220px;
     background-color: #555;
     color: #fff;
     text-align: center;
@@ -932,9 +933,9 @@ footer p {
     padding: 5px;
     position: absolute;
     z-index: 1;
-    bottom: 125%; /* Position above the button */
-    right: -60px; /* Align to the right */
-    margin-left: -60px; /* Center align */
+    bottom: 125%; 
+    right: -60px;
+    margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
 }
@@ -951,4 +952,40 @@ footer p {
 .get-cv:disabled .tooltip {
     visibility: visible;
     opacity: 1;
-}
+} */
+
+
+.get-cv {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .button-outline {
+    cursor: pointer;
+  }
+  
+  .button-outline:disabled {
+    cursor: not-allowed;
+  }
+  
+  .tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    right: -60px;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+  
+  .show-tooltip {
+    visibility: visible;
+    opacity: 1;
+  }

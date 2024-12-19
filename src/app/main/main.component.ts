@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener,ElementRef ,ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -24,7 +24,21 @@ export class MainComponent {
     if (header && !header.contains(event.target as Node)) {
       this.showBurgerMenu = false;
     }
+  } 
+  
+  @ViewChild('cvButton') cvButton!: ElementRef;
+
+
+  onButtonMouseEnter() {
+    this.showTooltip = true;
   }
+
+  onButtonMouseLeave() {
+    this.showTooltip = false;
+  }
+
+
+
 
   downloadPdf(): void {
     let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf.pdf';
