@@ -33,25 +33,28 @@
             <!-- <div class="get-cv">
                 <a  (click)="downloadPdf()"><button class="button-outline">Get
                         CV</button></a>
-            </div> sc-->
+            </div>  -->
+       
+
             <div class="get-cv">
-                <a href="#" (click)="downloadPdf()">
-                    <button class="button-outline" [disabled]="isDisabled"
-                        (mouseenter)="showTooltip = true"
-                        (mouseleave)="showTooltip = false">
-                        Get CV
-                    </button>
-                </a>
-                <div *ngIf="showTooltip && (isDisabled || !isDisabled)" class="tooltip">
+                <button class="button-outline" [disabled]="isDisabled"
+                    (click)="downloadPdf()"
+                    (mouseenter)="showTooltip = true"
+                    (mouseleave)="showTooltip = false">
+                    Get CV
+                </button>
+                <div *ngIf="showTooltip" class="tooltip">
                     {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below! 📧' : 'Click to download CV' }}
                 </div>
             </div>
+
+            
             
             
             
             
         </div>
-        <img class="angular-logo" id="me-one" alt="angular Icon" src="assets/angular-icon.png">
+        <img class="angular-logo" id="me-one" alt="angular Icon" src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/angular-icon.png">
     </div>
 </div>
 
@@ -95,8 +98,12 @@
 
 
 
-<!-- ===============  Section 3 =============== -->
-<div id="skills">
+
+
+
+
+<!-- ===============  Section 3  for serve /local =============== -->
+<!-- <div id="skills">
     <div class="section-heading">
         <p class="color-dark-pink section-heading-paragraph">SKILLS</p>
         <h3 class="section-heading-text">TECH STACK</h3>
@@ -114,16 +121,13 @@
                 <div class="column">
                     <div class="icon1">
                         
-                        <!-- <img src="assets/icons/typescript.png" alt="TypeScript Icon"> -->
-                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/typescript.png" alt="TypeScript Icon">
-                        
-                        <!-- https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/javascript.png -->
+                        <img src="assets/icons/typescript.png" alt="TypeScript Icon">
                         <p>TypeScript</p>
                     </div>
                 </div>
                 <div class="column">
                     <div class="icon1">
-                        <img src="browser/assets/icons/javascript.png" alt="JavaScript Icon">
+                        <img src="assets/icons/javascript.png" alt="JavaScript Icon">
                         <p>JavaScript</p>
                     </div>
                 </div>
@@ -232,6 +236,145 @@
         </div>
     </div>
 </div>
+ -->
+
+<!-- ===============  Section 3  for build/host =============== -->
+<div id="skills">
+    <div class="section-heading">
+        <p class="color-dark-pink section-heading-paragraph">SKILLS</p>
+        <h3 class="section-heading-text">TECH STACK</h3>
+    </div>
+
+    <div class="icon-grid">
+        <div class="section-heading-skills">
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/angular.png" alt="Angular Icon">
+                        <p>Angular</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/typescript.png" alt="TypeScript Icon">
+                        <p>TypeScript</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/javascript.png" alt="JavaScript Icon">
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/angularjs.png" alt="AngularJS Icon">
+                        <p>AngularJS</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/debugging.png" alt="Debugging Icon">
+                        <p>Debugging</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/uiux.png" alt="UI/UX Icon">
+                        <p>UI/UX</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/rest-api-icon.png" alt="RESTful APIs Icon">
+                        <p>RESTful APIs</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/jquery.png" alt="jQuery Icon">
+                        <p>jQuery</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/unit-testing.png" alt="unit testing Icon">
+                        <p>Unit Testing</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/html.png" alt="HTML Icon">
+                        <p>HTML</p>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/css-3.png" alt="CSS Icon">
+                        <p>CSS</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/bootstrap.png" alt="Bootstrap Icon">
+                        <p>Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/agile.png" alt="aglie Icon">
+                        <p>Agile Methodology</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/postman.png" alt="Postman Icon">
+                        <p>Postman</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/github.png" alt="GitHub Icon">
+                        <p>GitHub</p>
+                    </div>
+                </div>
+
+
+                <div class="column">
+                    <div class="icon1">
+                        <img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/icons/photoshop.png" alt="Photoshop Icon">
+                        <p>Photoshop</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 
 
 <!-- ===============  Section 4 =============== -->
@@ -339,12 +482,12 @@
 <!-- ==============  Footer ================ -->
 <div id="social-links">
     <div class="flex-container">
-        <a href="https://github.com/vaibhavdhole98" target="_blank"><img src="assets/social/github.svg"></a>
-        <a href="https://www.instagram.com/vaibhav__dhole/" target="_blank"><img src="assets/social/insta.svg"></a>
-        <a href="https://twitter.com/VaibhavDhole8" target="_blank"><img src="assets/social/twitter-logo-x.svg"></a>
+        <a href="https://github.com/vaibhavdhole98" target="_blank"><img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/social/github.svg"></a>
+        <a href="https://www.instagram.com/vaibhav__dhole/" target="_blank"><img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/social/insta.svg"></a>
+        <a href="https://twitter.com/VaibhavDhole8" target="_blank"><img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/social/twitter-logo-x.svg"></a>
         
 
-        <a href="https://www.linkedin.com/in/vaibhavdhole98/" target="_blank"><img src="assets/social/linkedin.svg"></a>
+        <a href="https://www.linkedin.com/in/vaibhavdhole98/" target="_blank"><img src="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/assets/social/linkedin.svg"></a>
     </div>
 </div>
 

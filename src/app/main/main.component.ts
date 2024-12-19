@@ -9,7 +9,6 @@ export class MainComponent {
   showNavbar: boolean = false;
   showBurgerMenu: boolean = false;
   showNavbar2: boolean = false;
-  filePath :string="https://vaibhavdhole98.github.io/vaibhav_portfolio/browser/";
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
   }
@@ -17,7 +16,7 @@ export class MainComponent {
     this.showBurgerMenu = !this.showBurgerMenu;
   }
   showTooltip: boolean = false;
-  isDisabled: boolean = true; // Set this based on your condition
+  isDisabled: boolean = true;
 
   @HostListener('document:click', ['$event'])
   clickOutsideHeader(event: MouseEvent) {
@@ -28,7 +27,7 @@ export class MainComponent {
   }
 
   downloadPdf(): void {
-    let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf'; 
+    let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf.pdf';
     window.open(pdfUrl, '_blank');
 
   }
