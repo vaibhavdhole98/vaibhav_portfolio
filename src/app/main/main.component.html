@@ -53,14 +53,14 @@
                   class="button-outline" 
                   [disabled]="isDisabled"
                   (click)="downloadPdf()"
-                  (mouseenter)="onButtonMouseEnter()"
-                  (mouseleave)="onButtonMouseLeave()"
+                  (mouseenter)="handleMouseEnter()"
+                  (mouseleave)="handleMouseLeave()"
                   #cvButton>
                   Get CV
                 </button>
                 <div 
                   class="tooltip" 
-                  [class.show-tooltip]="showTooltip">
+                  [ngClass]="{'show-tooltip': showTooltip}">
                   {{ isDisabled ? 'If you really, really want to hire me, just send me an email at the address below! 📧' : 'Click to download CV' }}
                 </div>
               </div>

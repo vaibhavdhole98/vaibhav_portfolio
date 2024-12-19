@@ -969,6 +969,7 @@ footer p {
   }
   
   .tooltip {
+    display: block;
     visibility: hidden;
     width: 220px;
     background-color: #555;
@@ -983,9 +984,10 @@ footer p {
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s, visibility 0.3s;
+    pointer-events: none;
   }
   
-  .show-tooltip {
-    visibility: visible;
-    opacity: 1;
+  .tooltip.show-tooltip {
+    visibility: visible !important;
+    opacity: 1 !important;
   }

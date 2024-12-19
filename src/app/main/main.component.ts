@@ -1,4 +1,4 @@
-import { Component, HostListener,ElementRef ,ViewChild } from '@angular/core';
+import { Component, HostListener,ElementRef ,ViewChild, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -26,17 +26,18 @@ export class MainComponent {
     }
   } 
   
-  @ViewChild('cvButton') cvButton!: ElementRef;
 
+  constructor(private cdr: ChangeDetectorRef) {}
 
-  onButtonMouseEnter() {
+  handleMouseEnter(): void {
     this.showTooltip = true;
+    this.cdr.detectChanges();
   }
 
-  onButtonMouseLeave() {
+  handleMouseLeave(): void {
     this.showTooltip = false;
+    this.cdr.detectChanges();
   }
-
 
 
 
