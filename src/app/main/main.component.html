@@ -51,7 +51,7 @@
   
         <div class="get-cv">
           <button class="button-outline" (click)="downloadPdf()">Get CV</button>
-          <div *ngIf="tooltipMessage" class="tooltip">{{ tooltipMessage }}</div>
+          <div *ngIf="tooltipMessage == true" class="tooltip">{{ tooltipMessage2 }}</div>
         </div>
       </div>
       <img

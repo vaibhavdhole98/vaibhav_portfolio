@@ -44,7 +44,7 @@ import { Component, HostListener,ViewEncapsulation  } from '@angular/core';
 export class MainComponent {
   showNavbar: boolean = false;
   showBurgerMenu: boolean = false;
-  tooltipMessage: string = '';
+  tooltipMessage: boolean = false;
 
   toggleNavbar() {
     this.showNavbar = !this.showNavbar;
@@ -62,14 +62,14 @@ export class MainComponent {
     }
   }
 
-  // Modified method
+
+  tooltipMessage2:string ='If you really, really want to hire me, just send me an email at the address below! 📧';
   downloadPdf(): void {
+    this.tooltipMessage = true;
     //     let pdfUrl = 'assets/downloads/Vaibhav-Dhole Angular Developer (Resume).pdf'; 
     //     window.open(pdfUrl, '_blank');
-    this.tooltipMessage =
-      'If you really, really want to hire me, just send me an email at the address below! 📧';
     setTimeout(() => {
-      this.tooltipMessage = '';
-    }, 5000);
+      this.tooltipMessage = false;
+    }, 8000);
   }
 }
